@@ -69,8 +69,8 @@ header p {
 
 .team-item {
   width: 100%;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -98,9 +98,9 @@ header p {
 .team-item .name::before {
   content: attr(data-office);
   position: absolute;
-  top: 34%;
+  top: 136px;
   width: 100%;
-  left: 42%;
+  left: 31%;
   padding-bottom: 10px;
   transform: rotate(90deg);
   font-family: PT Serif;
@@ -152,8 +152,8 @@ footer p em {
     margin-top: 38px;
   }
 
-  header p{
-      width: 333px;
+  header p {
+    width: 333px;
   }
 
   /* Main */
@@ -164,6 +164,10 @@ footer p em {
 
   .team-item .box-img {
     width: 138px;
+  }
+
+  .team-item .name::before {
+    top: 75px;
   }
 
   .team-item:nth-child(2),
